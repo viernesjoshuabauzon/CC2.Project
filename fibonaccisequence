@@ -1,0 +1,43 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package fibonaccisequence;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author CC2_1E-37
+ */
+public class FibonacciSequence {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the nth of Fibonacci Sequence: ");
+        int  n = sc.nextInt();
+        n++;
+        for(int i = 0; i < n; i++){
+            System.out.print("f(" + i + ")\t");
+        }
+        System.out.print("\n");
+        for (int i = 0; i < n; i++){
+            for (int j = 0; j <= i; j++){
+                System.out.print (Fibonacci (j) + "\t");
+            }
+            System.out.print("\n");
+        }
+    }
+    static int Fibonacci(int nth){
+        if (nth <=1){
+            return nth;
+        }
+        else{
+            return Fibonacci(nth - 1) + Fibonacci(nth - 2);
+        } 
+    }
+}
