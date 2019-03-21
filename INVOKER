@@ -1,0 +1,72 @@
+
+package character;
+import javax.swing.*;
+import java.awt.*;
+
+
+public class INVOKER extends Panel {
+    
+  
+
+    
+    public static void main(String[] args){
+        
+        JFrame frame = new JFrame("GUI DEMO");
+        INVOKER gui = new INVOKER();
+        
+        
+        frame.setVisible(true);
+        frame.setSize(400,600);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.add(gui);
+    }
+    
+    public void paint(Graphics g){
+        g.setColor(new Color(132,12,132));
+        g.fillArc(-70, -59, 400, 400, 250, 47);
+        
+        g.setColor(new Color(132,12,132));
+        g.fillOval(151, 210, 125, 35);
+        g.fillOval(45, 200, 120, 25);
+        g.fillOval(170, 320, 25, 30);
+        g.fillOval(114, 320, 25, 30);
+        
+        g.setColor(new Color(165,6,165));
+        g.fillOval(100, 100, 100, 100);
+
+        g.setColor(Color.black);
+        g.fillOval(123, 135, 13, 18);
+        g.fillOval(170, 135, 13, 18);
+        g.fillOval(149, 149, 3, 13);
+        g.fillOval(143, 158, 3, 3);
+        g.fillOval(155, 158, 3, 3);
+        
+        g.setColor(Color.white);
+        g.fillOval(126, 142, 6, 10);
+        g.fillOval(174, 142, 6, 10);
+
+        g.setColor(new Color(26, 26, 255));
+        g.fillArc(31, -98, 236, 236, 248, 45);
+        g.fillOval(77, 122, 150, 15);
+
+        g.setColor(new Color(179, 179, 179));
+        g.fillOval(127, 165, 46, 85);
+
+        g.setColor(Color.black);
+        g.fillRoundRect(136, 176, 30, 10, 50, 30);
+        
+        g.setColor(new Color(204, 0, 0));
+        g.fillOval(98, 250, 106, 15);
+        
+        g.setColor(new Color(204, 0, 0));
+        g.fillOval(45, 100, 10, 250);
+        
+        g.setColor(new Color(115, 38, 115));
+        g.fillOval(35, 100, 30, 30);
+        
+       
+
+    }
+}
+
+    
